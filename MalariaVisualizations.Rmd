@@ -103,7 +103,7 @@ malaria_spread %>%
   # arrange(change)
   ggplot(aes(current, change)) +
   geom_point() +
-  geom_text(aes(label = code), vjust = 1, hjust = 0)
+  geom_text(aes(label = country), vjust = 1, hjust = 0)
 ```
 
 Note that Turkey seemed to have 1741 incidences per 1000 people in year 2000, which does not seem logical. Hence, the plot above excludes data points from Turkey. Perhaps further work has to be done to determine the reason for this deviation.
